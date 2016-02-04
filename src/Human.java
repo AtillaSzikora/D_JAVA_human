@@ -32,6 +32,11 @@ public class Human {
 
     @Override
     public String toString() {
-        return "Gender:" + gender;
+        return "Gender:" + gender.toString() + " Name: " + name + " Age: " + age;
+    }
+
+    public static void main(String[] args) {
+        Human vakOnd = new Human(Gender.MALE, "Vak Ond", 11, 170, 60, false);
+        System.out.println(vakOnd.toString());
     }
 }
